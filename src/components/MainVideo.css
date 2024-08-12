@@ -1,0 +1,126 @@
+.main-video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-photo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio and avoid distortion */
+    border: 5px solid white;
+    border-radius: 8px;
+    position: relative; /* Needed to position elements inside the image */
+  }
+  
+  .three-dots-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 240, 240);
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .three-dots-menu svg {
+    color: white;
+    font-size: 24px; /* Adjust size of the icon */
+  }
+  
+  .small-photo-container {
+    position: absolute;
+    top: 60px; /* Adjust spacing between dots and small photo */
+    right: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .small-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid white;
+  }
+
+  .avatar-container {
+    position: absolute;
+    bottom: 120px; /* Position above the message section */
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between avatar, name, and button */
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .avatar-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align name and button on the same line */
+    flex: 1;
+  }
+  
+  .avatar-name {
+    color: white;
+    font-size: 16px;
+    margin-right: 15px; /* Space between name and button */
+  }
+  
+  .follow-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px; /* Optional: Adjust font size for better appearance */
+  }
+  
+  .follow-button:hover {
+    background-color: #0056b3;
+  }
+
+  .message-section {
+    position: absolute; /* Change to absolute to position relative to the main photo */
+    bottom: 0; /* Stick to the bottom of the main photo */
+    left: 0; /* Align with the left edge of the main photo */
+    width: 100%; /* Full width of the main photo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top-left-radius: 8px; /* Optional rounded corners */
+    border-top-right-radius: 8px; /* Optional rounded corners */
+  }
+  
+  .message-section input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .message-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .message-section button:hover {
+    background-color: #0056b3;
+  }
+  
