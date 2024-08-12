@@ -1,5 +1,5 @@
 import React from 'react';
-import './Video1.css';
+import './MainVideo.css';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { MdSend } from 'react-icons/md';
