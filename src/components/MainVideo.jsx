@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainVideo.css';
+import './Video1.css';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { MdSend } from 'react-icons/md';
@@ -7,9 +7,10 @@ import first from "../Images/first.jpg";
 import second from "../Images/second.jpg";
 import { PiDotsThreeOutlineVerticalLight } from "react-icons/pi";
 
-const MainVideo = ({ src }) => {
+
+const MainVideo = () => {
   return (
-    <>
+    <div className="card-container">
       <div className="main-video-container">
       <img src={first} alt="Main Video" className="main-photo" />
       <div className="three-dots-menu">
@@ -34,7 +35,7 @@ const MainVideo = ({ src }) => {
         <input type="text" placeholder="Tap to write..." />
         <button><MdSend /></button>
       </div>
-      </>
+    </div>
   );
 };
 
